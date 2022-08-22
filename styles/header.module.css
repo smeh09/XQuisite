@@ -1,0 +1,35 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 65px;
+  font-size: 20px;
+}
+
+#title {
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+#selected,
+#loginTxt,
+#title {
+  color: var(--primary);
+}
+
+#nonSelected {
+  color: var(--grey-200);
+}
+
+#specialLnk {
+  background: var(--primary);
+  padding: 12px 25px;
+  font-size: 19px;
+  color: black;
+  border-radius: 8px;
+}
