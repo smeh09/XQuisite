@@ -1,12 +1,41 @@
 import styles from "../styles/auth.module.css";
 import { useState } from "react";
+import { useRouter } from "next/router";
 import Head from "next/head";
 
 export default function SignUp() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  return (
+  const [loading, setLoading] = useState(false);
+
+  const router = useRouter();
+
+  const submit = async () => {
+    setLoading(true);
+    const res = await fetch("https://localhost:5000/api/user", {
+      body: JSON.stringify({
+        name,
+        email,
+        password,
+      }),
+      method: "POST",
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Credentials": true,
+      },
+    });
+    const data = await res.json();
+    if (data.success) {
+      localStorage.setItem("token", data.token);
+      router.push("/add");
+    } else {
+      alert(data.msg);
+    }
+    setLoading(false);
+  };
+
+  return !loading ? (
     <>
       <Head>
         <title>Login - Lectricus</title>
@@ -35,7 +64,7 @@ export default function SignUp() {
               className={styles.input}
             />
             <input
-              type="text"
+              type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Your password"
@@ -43,9 +72,13 @@ export default function SignUp() {
               id={styles.lastInput}
             />
           </div>
-          <button id={styles.submit}>Sign Up!</button>
+          <button id={styles.submit} onClick={submit}>
+            Sign Up!
+          </button>
         </div>
       </div>
     </>
+  ) : (
+    <div className="loader"></div>
   );
 }

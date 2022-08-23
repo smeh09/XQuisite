@@ -43,3 +43,11 @@ input {
   border-radius: 5px;
   outline: none;
 }
+
+.loader {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-top: 80px;
+  background-color: var(--primary);
+}
