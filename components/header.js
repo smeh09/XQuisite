@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 
 export default function Header() {
   const router = useRouter();
-  console.log();
   return (
     <header id={styles.header}>
       <Link href="/">
