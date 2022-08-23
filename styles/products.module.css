@@ -1,0 +1,83 @@
+.heading {
+  padding-top: 20px;
+  padding-left: 40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.sub {
+  color: var(--primary);
+}
+
+.productRow {
+  padding-top: 100px;
+  justify-content: center;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+
+.productCard {
+  background-color: var(--bg-2);
+  height: 600px;
+  width: 340px;
+  border-radius: 5px;
+  border-color: var(--stroke);
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  flex-direction: column;
+}
+.img {
+  height: 250px;
+  width: 250px;
+  align-self: center;
+  padding-top: 50px;
+}
+.cardHead {
+  padding-top: 20px;
+  padding-left: 40px;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.cardSub {
+  padding-top: 5px;
+  padding-left: 40px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--grey-200);
+}
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.submitDiv {
+  padding-left: 40px;
+  padding-top: 50px;
+}
+.lastText {
+  text-align: center;
+  padding-bottom: 100px;
+  font-size: 20px;
+  font-weight: bold;
+}
+#submit {
+  background: var(--primary);
+  padding: 10px 0;
+  width: 100px;
+  font-size: 13px;
+  border-radius: 5px;
+  outline: none;
+  color: black;
+  border: none;
+}
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 25px;
+  }
+}
