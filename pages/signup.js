@@ -1,5 +1,6 @@
 import styles from "../styles/auth.module.css";
 import { useState } from "react";
+import Head from "next/head";
 
 export default function SignUp() {
   const [name, setName] = useState("");
