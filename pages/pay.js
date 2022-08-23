@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import styles from "../styles/pay.module.css";
 import Head from "next/head";
@@ -24,7 +26,10 @@ export default function Pay() {
           <div className={styles.cardSub}>Rs 12,000</div>
           <div className={styles.row}>
             <div className={styles.column}>
-              <div className={styles.cardHead}>Pending On</div>
+              <div className={styles.row}>
+                <img src="/icons/clock.svg" className={styles.icon}></img>
+                <div className={styles.cardHead1}>Pending On</div>
+              </div>
               <div className={styles.cardSub}>15 September, 2022</div>
             </div>
           </div>
