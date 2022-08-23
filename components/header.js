@@ -49,7 +49,7 @@ export default function Header() {
         </Link>
       </nav>
       <nav id={styles.nav2} className={styles.nav}>
-        <Link href="/">
+        <Link href="/login">
           <div
             className={`${styles.navTxt} ${styles.hoverUnderlineAnimation}`}
             id={styles.loginTxt}
@@ -57,7 +57,7 @@ export default function Header() {
             Login
           </div>
         </Link>
-        <Link href="/contact">
+        <Link href="/signup">
           <button id={styles.specialLnk}>Get started</button>
         </Link>
       </nav>

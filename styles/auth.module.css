@@ -1,0 +1,57 @@
+#fullContainer {
+  min-height: calc(100vh - 195px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  margin-top: 40px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 1000;
+}
+
+#heading2 {
+  margin-bottom: 25px;
+}
+
+#gradient {
+  background: -webkit-linear-gradient(0deg, var(--primary), var(--grad-red));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#signCnt {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  margin: 10px 0;
+}
+
+#submit {
+  background: var(--primary);
+  padding: 15px 0;
+  width: 400px;
+  font-size: 19px;
+  border-radius: 5px;
+  outline: none;
+  color: black;
+  border: none;
+}
+
+#lastInput {
+  margin-bottom: 30px;
+}

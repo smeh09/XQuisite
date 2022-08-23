@@ -33,3 +33,13 @@ button {
 body {
   background-color: var(--bg);
 }
+
+input {
+  background: var(--bg-2);
+  border: 2px solid var(--stroke);
+  padding: 15px 30px;
+  width: 340px;
+  font-size: 19px;
+  border-radius: 5px;
+  outline: none;
+}
