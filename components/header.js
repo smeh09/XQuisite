@@ -8,12 +8,17 @@ export default function Header() {
   return (
     <header id={styles.header}>
       <Link href="/">
-        <div id={styles.title}>Lectricus</div>
+        <div
+          id={styles.title}
+          className={`${styles.navTxt} ${styles.hoverUnderlineAnimation}`}
+        >
+          Lectricus
+        </div>
       </Link>
       <nav id={styles.nav1} className={styles.nav}>
         <Link href="/">
           <div
-            className={styles.navTxt}
+            className={`${styles.navTxt} ${styles.hoverUnderlineAnimation}`}
             id={router.pathname == "/" ? styles.selected : styles.nonSelected}
           >
             Home
@@ -21,7 +26,7 @@ export default function Header() {
         </Link>
         <Link href="/contact">
           <div
-            className={styles.navTxt}
+            className={`${styles.navTxt} ${styles.hoverUnderlineAnimation}`}
             id={
               router.pathname == "/contact"
                 ? styles.selected
@@ -33,7 +38,7 @@ export default function Header() {
         </Link>
         <Link href="/products">
           <div
-            className={styles.navTxt}
+            className={`${styles.navTxt} ${styles.hoverUnderlineAnimation}`}
             id={
               router.pathname == "/products"
                 ? styles.selected
@@ -46,7 +51,10 @@ export default function Header() {
       </nav>
       <nav id={styles.nav2} className={styles.nav}>
         <Link href="/">
-          <div className={styles.navTxt} id={styles.loginTxt}>
+          <div
+            className={`${styles.navTxt} ${styles.hoverUnderlineAnimation}`}
+            id={styles.loginTxt}
+          >
             Login
           </div>
         </Link>
