@@ -22,6 +22,10 @@
   color: var(--primary);
 }
 
+#title {
+  cursor: pointer;
+}
+
 #nonSelected {
   color: var(--grey-200);
 }
@@ -32,4 +36,8 @@
   font-size: 19px;
   color: black;
   border-radius: 8px;
+}
+
+.navTxt {
+  cursor: pointer;
 }

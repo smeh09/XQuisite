@@ -7,7 +7,9 @@ export default function Header() {
   console.log();
   return (
     <header id={styles.header}>
-      <div id={styles.title}>Lectricus</div>
+      <Link href="/">
+        <div id={styles.title}>Lectricus</div>
+      </Link>
       <nav id={styles.nav1} className={styles.nav}>
         <Link href="/">
           <div
