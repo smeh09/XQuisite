@@ -1,0 +1,113 @@
+.container {
+  padding-top: 50px;
+}
+.heading {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 1000;
+}
+.subHeading {
+  padding-top: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  text-align: center;
+  color: var(--grey-7E);
+}
+#gradient {
+  background: -webkit-linear-gradient(0deg, var(--primary), var(--grad-red));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.submitRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+#sub {
+  padding-top: 100px;
+  font-size: 25px;
+}
+#submit {
+  background: var(--primary);
+  padding: 15px 0;
+  width: 150px;
+  font-size: 19px;
+  border-radius: 5px;
+  outline: none;
+  color: black;
+  border: none;
+}
+.submitSide {
+  padding-left: 30px;
+  color: var(--grey-7E);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 20px;
+}
+.featuresRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 50px;
+}
+.featureCardDiv {
+  background-color: var(--bg-2);
+  height: 200px;
+  width: 400px;
+  border-radius: 5px;
+  border-color: var(--stroke);
+  border-style: solid;
+  border-width: 1px;
+}
+.featureRow1 {
+  padding-left: 20px;
+  padding-top: 30px;
+  display: flex;
+}
+.featureCardHeading {
+  font-weight: bold;
+  font-size: 20px;
+}
+.featureCardIcon {
+  padding-right: 20px;
+}
+.featureCardDesc {
+  padding-top: 30px;
+  font-size: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: var(--grey-7E);
+  font-weight: 500;
+}
+.motiveDesc {
+  font-size: 12px;
+  color: var(--grey-7E);
+  text-align: center;
+  padding-top: 50px !important;
+  padding-right: 40px;
+  padding-left: 40px;
+  font-weight: 500;
+}
+.faq {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 35px;
+  }
+  .subHeading {
+    font-size: 10px;
+  }
+  #submit {
+    padding: 10px 0;
+    width: 100px;
+    font-size: 10px;
+  }
+  .submitSide {
+    font-size: 10px;
+  }
+}
