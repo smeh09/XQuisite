@@ -73,6 +73,7 @@ export default function Dashboard() {
           title3={"Using Since"}
           desc3={"4 months"}
           buttonText={"Report Issues"}
+          link={"/issues"}
         />
       </div>
       <div className={styles.sub3}>ORDERS</div>
@@ -83,6 +84,7 @@ export default function Dashboard() {
           title3={"Ordered on"}
           desc3={"15 July, 2022"}
           buttonText={"Re Order"}
+          link={"/pay"}
         />
       </div>
       <div className={styles.sub3}>BILLS</div>

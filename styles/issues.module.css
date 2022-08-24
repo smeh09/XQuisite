@@ -1,0 +1,52 @@
+.head {
+  padding-top: 20px;
+  padding-left: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--grey-600);
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+}
+.img {
+  padding-top: 20px;
+  padding-left: 100px;
+  width: 30px;
+}
+.sub1 {
+  padding-left: 40px;
+  padding-top: 10px;
+  color: var(--grey-600);
+  font-weight: 500;
+  padding-bottom: 60px;
+}
+.input1 {
+  background: var(--bg-2);
+  border: 2px solid var(--stroke);
+  padding: 15px 30px;
+  width: 800px;
+  font-size: 19px;
+  border-radius: 5px;
+  outline: none;
+  align-self: center;
+}
+#submit {
+  background: var(--primary);
+  padding: 19px 0;
+  width: 400px;
+  font-size: 19px;
+  border-radius: 5px;
+  outline: none;
+  color: black;
+  border: none;
+}
+
+.submitRow {
+  padding-top: 100px;
+  text-align: center;
+  padding-bottom: 150px;
+}

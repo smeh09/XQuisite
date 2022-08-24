@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import styles from "../../styles/dashboard.module.css";
+import Link from "next/link";
 
 export default function DeviceCard({
   title2,
@@ -9,6 +10,7 @@ export default function DeviceCard({
   title3,
   desc3,
   buttonText,
+  link,
 }) {
   return (
     <div className={styles.card}>
@@ -28,7 +30,9 @@ export default function DeviceCard({
           </div>
         </div>
         <div className={styles.submitDiv}>
-          <button id={styles.submit}>{buttonText}</button>
+          <Link href={link}>
+            <button id={styles.submit}>{buttonText}</button>
+          </Link>
         </div>
       </div>
     </div>
