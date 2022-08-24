@@ -1,0 +1,172 @@
+.heading {
+  padding-top: 20px;
+  padding-left: 40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.sub {
+  color: var(--primary);
+}
+
+.sub2 {
+  color: var(--grey-600);
+  font-weight: 300;
+  padding-left: 40px;
+  padding-top: 60px;
+}
+.sub3 {
+  color: var(--grey-600);
+  font-weight: 300;
+  padding-left: 40px;
+  padding-top: 60px;
+}
+.sub4 {
+  font-weight: bold;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+.mainCont {
+  display: flex;
+  flex-direction: column;
+}
+.titleRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.mainCont1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.doughnutCont {
+  position: relative;
+  height: 400px;
+  width: 400px;
+}
+.chartCont {
+  padding-top: 100px;
+}
+.deviceCardRow {
+  padding-top: 100px;
+  padding-left: 40px;
+}
+.mainRow {
+  padding-left: 40px;
+}
+.card {
+  background-color: var(--bg-2);
+  height: 350px;
+  width: 640px;
+  border-radius: 5px;
+  border-color: var(--stroke);
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+}
+.img {
+  height: 350px;
+  width: 250px;
+}
+.cardHead {
+  padding-top: 30px;
+  padding-left: 40px;
+  font-size: 21px;
+  font-weight: bold;
+}
+.cardHead1 {
+  padding-top: 30px;
+  padding-left: 5px;
+  font-size: 21px;
+  font-weight: bold;
+}
+.cardSub {
+  padding-top: 5px;
+  padding-left: 40px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--grey-200);
+}
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.sideText {
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 70px;
+  text-align: center;
+  padding-top: 100px;
+}
+.sideText1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 70px;
+}
+.submitDiv {
+  padding-top: 15px;
+}
+#submit {
+  background: var(--primary);
+  padding: 19px 0;
+  width: 300px;
+  font-size: 19px;
+  border-radius: 5px;
+  outline: none;
+  color: black;
+  border: none;
+}
+#submit1 {
+  background: var(--primary);
+  padding: 19px 0;
+  width: 400px;
+  font-size: 19px;
+  border-radius: 5px;
+  outline: none;
+  color: black;
+  border: none;
+}
+.icon {
+  height: 25px;
+  width: 25px;
+  align-self: flex-end;
+  padding-left: 10px;
+}
+.payRow {
+  display: flex;
+  padding-top: 100px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.submitDiv1 {
+  display: flex;
+  padding-top: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+@media screen and (max-width: 1000px) {
+  .img {
+    display: none;
+  }
+  .card {
+    width: 350px;
+    height: 350px;
+  }
+  .sub4 {
+    display: none;
+  }
+}
