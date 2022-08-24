@@ -6,7 +6,7 @@ import Head from "next/head";
 
 export default function products() {
   return (
-    <div>
+    <div id={styles.container}>
       <Head>
         <title>Products - Lectricus</title>
       </Head>
@@ -20,9 +20,12 @@ export default function products() {
         <ProductCard />
       </div>
       <div className={styles.lastText}>
-        Contact us for <span className={styles.sub}>Customized</span> builds
+        Contact us for{" "}
+        <span className={styles.sub} id={styles.sub2}>
+          Customized
+        </span>{" "}
+        builds
       </div>
-      <Footer />
     </div>
   );
 }

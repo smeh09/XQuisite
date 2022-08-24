@@ -10,7 +10,7 @@ export default function ProductCard() {
       <div className={styles.cardSub}>Latest</div>
       <div className={styles.cardHead}>Delievered By</div>
       <div className={styles.cardSub}>29 August, 2022</div>
-      <div className={styles.row}>
+      <div className={styles.rows}>
         <div className={styles.column}>
           <div className={styles.cardHead}>Ratings</div>
           <div className={styles.cardSub}>4.5 Stars</div>
