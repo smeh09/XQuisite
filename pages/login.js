@@ -35,7 +35,7 @@ export default function Login() {
     setLoading(false);
   };
 
-  return (
+  return !loading ? (
     <>
       <Head>
         <title>Login - Lectricus</title>
@@ -71,5 +71,7 @@ export default function Login() {
         </div>
       </div>
     </>
+  ) : (
+    <div className="loader"></div>
   );
 }

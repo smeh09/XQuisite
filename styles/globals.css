@@ -65,5 +65,17 @@ input {
   height: 100px;
   margin: auto;
   margin-top: 80px;
-  background-color: var(--primary);
+  border-radius: 50%;
+  border: 17px solid var(--grey-800);
+  border-top: 17px solid var(--primary);
+  animation: load 2s linear infinite;
+}
+
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
