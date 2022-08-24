@@ -17,6 +17,10 @@ export default function Add() {
       <div className={styles.sub1}>
         Enter your products UID to add it into your list to get personlized data
       </div>
+      <div className={styles.sub2}>
+        The UID is found at the back of the product as a 10 Digit Number code.
+        For example - 1009283910
+      </div>
       <input
         type="text"
         value={id}
@@ -24,10 +28,7 @@ export default function Add() {
         placeholder="Enter UID"
         className={styles.input1}
       />
-      <div className={styles.sub2}>
-        The UID is found at the back of the product as a 10 Digit Number code.
-        For example - 1009283910
-      </div>
+
       <div className={styles.submitRow}>
         <Link href="/dashboard">
           <button id={styles.submit}>Add</button>

@@ -16,11 +16,11 @@
   padding-top: 5px;
   color: var(--grey-600);
   font-weight: 500;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
 }
 .sub2 {
   padding-left: 40px;
-  padding-top: 100px;
+  padding-top: 5px;
   color: var(--grey-600);
   font-weight: 500;
   padding-bottom: 100px;
@@ -49,7 +49,7 @@
 .submitRow {
   padding-top: 100px;
   text-align: center;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
 }
 @media screen and (max-width: 1000px) {
   .input1 {

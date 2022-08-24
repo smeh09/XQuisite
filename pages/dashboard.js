@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/dashboard.module.css";
 import Head from "next/head";
+import Link from "next/link";
 import PieChart from "../components/Dashboard/PieChart";
 import LineChart from "../components/Dashboard/LineChart";
 import DeviceCard from "../components/Dashboard/DeviceCard";
@@ -90,8 +91,12 @@ export default function Dashboard() {
         <PendingCard />
       </div>
       <div className={styles.submitDiv1}>
-        <button id={styles.submit1}>View Previous Month Data</button>
-        <button id={styles.submit1}>Add New Device</button>
+        <Link href="/previous">
+          <button id={styles.submit1}>View Previous Month Data</button>
+        </Link>
+        <Link href="/add">
+          <button id={styles.submit1}>Add New Device</button>
+        </Link>
       </div>
     </div>
   );
