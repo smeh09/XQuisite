@@ -12,17 +12,19 @@ export default function SignUp() {
   const router = useRouter();
 
   const submit = async () => {
+    const bodyData = {
+      name,
+      email,
+      password,
+    };
     setLoading(true);
-    const res = await fetch("https://localhost:5000/api/user", {
-      body: JSON.stringify({
-        name,
-        email,
-        password,
-      }),
+    const res = await fetch("http://localhost:5000/api/user", {
+      body: JSON.stringify(bodyData),
       method: "POST",
       headers: {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Credentials": true,
+        "Content-Type": "application/json",
       },
     });
     const data = await res.json();
