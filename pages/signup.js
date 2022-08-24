@@ -40,7 +40,7 @@ export default function SignUp() {
   return !loading ? (
     <>
       <Head>
-        <title>Login - Lectricus</title>
+        <title>Register - Lectricus</title>
       </Head>
       <div id={styles.fullContainer}>
         <div id={styles.container}>
