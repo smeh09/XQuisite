@@ -78,10 +78,11 @@ export default function Home() {
             suscipit elit. Etiam tincidunt ante ac sem blandit malesuada Lorem
           </div>
         </div>
-        <div>
+        <div className={styles.videoSection}>
           <div className={styles.heading} id={styles.sub}>
             Promo.
           </div>
+          <video src="/promo.mp4" controls height={400}></video>
         </div>
       </div>
     </>
