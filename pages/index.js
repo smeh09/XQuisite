@@ -36,21 +36,21 @@ export default function Home() {
               title={"See the bill"}
               iconPath={"/icons/signal.svg"}
               desc={
-                " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu elit eufelis blandit condimentum. Ut ac suscipit elit. Etiam tincidunt ante ac sem blandit malesuada Lorem"
+                "Our inbuilt screen shows both a pie chart graph and a text format on the number of units used and the total monthly bill. The website further adds on a few details and gives personalized comments on how you can reduce your bill."
               }
             />
             <FeatureCard
               title={"Pay and save"}
               iconPath={"/icons/money.svg"}
               desc={
-                " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu elit eufelis blandit condimentum. Ut ac suscipit elit. Etiam tincidunt ante ac sem blandit malesuada Lorem"
+                "If your units consumed per month is lesser than the level set by the goverment, a 5% to 10% cashback will be provided. One can avail the cashback by paying directly through the website."
               }
             />
             <FeatureCard
               title={"Monitor the data"}
               iconPath={"/icons/chart.svg"}
               desc={
-                " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu elit eufelis blandit condimentum. Ut ac suscipit elit. Etiam tincidunt ante ac sem blandit malesuada Lorem"
+                "Our website provides graphical and text representation of previous months electricity use and gives a percentage reduce or increase to the current month."
               }
             />
           </div>
