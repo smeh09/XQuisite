@@ -22,11 +22,11 @@ export default function Pay() {
         <div className={styles.payCard}>
           <div className={styles.cardHead}>AUGUST</div>
           <div className={styles.cardSub}>From Lectricus 2.0</div>
-          <div className={styles.cardHead}>Total Cost</div>
+          <div className={styles.cardHead1}>Total Cost</div>
           <div className={styles.cardSub}>Rs 12,000</div>
           <div className={styles.row}>
             <div className={styles.column}>
-              <div className={styles.row}>
+              <div className={styles.row} id={styles.headRow}>
                 <img src="/icons/clock.svg" className={styles.icon}></img>
                 <div className={styles.cardHead1}>Pending On</div>
               </div>
@@ -34,7 +34,7 @@ export default function Pay() {
             </div>
           </div>
         </div>
-        <div>
+        <div className={styles.side}>
           <div className={styles.sideText}>
             Our AI is taking your card details from previous orders.
           </div>
@@ -43,7 +43,6 @@ export default function Pay() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
