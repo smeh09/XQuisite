@@ -14,7 +14,11 @@ export default function DeviceCard({
 }) {
   return (
     <div className={styles.card}>
-      <img src="/imgs/testImg.jpg" alt="img" className={styles.img}></img>
+      <img
+        src="https://media.discordapp.net/attachments/950077830799183893/1012314019631222874/unknown.png"
+        alt="img"
+        className={styles.img}
+      ></img>
       <div className={styles.mainRow}>
         <div className={styles.cardHead}>Lectricus 2.0</div>
         <div className={styles.cardSub}>Current Device</div>

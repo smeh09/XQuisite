@@ -2,7 +2,7 @@
 import React from "react";
 import styles from "../../styles/products.module.css";
 
-export default function ProductCard({ name, path }) {
+export default function ProductCard({ name, path, cost }) {
   const today = new Date();
   const dd = String(today.getDate() + 1).padStart(2, "0");
   const mm = String(today.getMonth() + 1).padStart(2, "0");
@@ -23,7 +23,7 @@ export default function ProductCard({ name, path }) {
         </div>
         <div className={styles.column1}>
           <div className={styles.cardHead}>Cost</div>
-          <div className={styles.cardSub}>Rs - XXXXX</div>
+          <div className={styles.cardSub}>{cost}</div>
         </div>
       </div>
       <div className={styles.submitDiv}>

@@ -80,8 +80,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
-
+.sideTitle {
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-top: 50px;
+  font-weight: bold;
+  color: var(--primary);
+}
 .sideText1 {
   font-size: 26px;
   font-weight: bold;

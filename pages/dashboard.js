@@ -93,7 +93,7 @@ export default function Dashboard() {
       <div className={styles.deviceCardRow}>
         <DeviceCard
           title2={"Cost "}
-          desc2={"Rs XXXXX"}
+          desc2={"Rs "}
           title3={"Ordered on"}
           desc3={"15 July, 2022"}
           buttonText={"Re Order"}

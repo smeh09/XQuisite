@@ -16,7 +16,7 @@ export default function Home() {
             Meet the <span id={styles.gradient}>future</span> of sustainability.
           </div>
           <div className={styles.subHeading}>
-            Usage units, pay bills, see previous month data and so much more.
+            See usage , pay bills, see previous month data and so much more.
           </div>
           <div className={styles.submitRow}>
             <Link href="/signup">

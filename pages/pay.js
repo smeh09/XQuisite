@@ -7,6 +7,9 @@ import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 
 export default function Pay() {
+  const [no, setNo] = useState("");
+  const [cvv, setCVV] = useState("");
+  const [name, setName] = useState("");
   const [id, setId] = useState("");
   const router = useRouter();
   const [isSignedIn, setIsSignedIn] = useState(false);
@@ -48,13 +51,33 @@ export default function Pay() {
           </div>
         </div>
         <div className={styles.side}>
-          <div className={styles.sideText}>
-            Our AI is taking your card details from previous orders.
-          </div>
-          <div className={styles.sideText1}>
-            To Change <span className={styles.sub}>Card</span> Click Here
-          </div>
+          <div className={styles.sideTitle}>Card Details</div>
+          <input
+            value={no}
+            onChange={(e) => setNo(e.target.value)}
+            type="text"
+            placeholder="Card Number"
+            className={styles.input}
+          />
+          <input
+            type="password"
+            value={cvv}
+            onChange={(e) => setCVV(e.target.value)}
+            placeholder="Card CVV"
+            className={styles.input}
+          />
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Card Holder Name"
+            className={styles.input}
+            id={styles.lastInput}
+          />
         </div>
+      </div>
+      <div className={styles.submitRow}>
+        <button id={styles.submit}>Pay and Zap</button>
       </div>
     </div>
   );
