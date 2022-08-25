@@ -1,11 +1,25 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "../styles/add.module.css";
 import Head from "next/head";
 import Footer from "../components/Footer";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Add() {
   const [id, setId] = useState("");
+
+  const router = useRouter();
+  const [isSignedIn, setIsSignedIn] = useState(false);
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (!token || token == "undefined") {
+      setIsSignedIn(false);
+      router.push("/");
+    } else {
+      setIsSignedIn(true);
+    }
+  });
+
   return (
     <div className={styles.container}>
       <Head>

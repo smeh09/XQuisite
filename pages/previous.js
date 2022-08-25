@@ -2,8 +2,21 @@ import React from "react";
 import styles from "../styles/previous.module.css";
 import Head from "next/head";
 import PieChart from "../components/Dashboard/PieChart";
+import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
 
 export default function Previous() {
+  const router = useRouter();
+  const [isSignedIn, setIsSignedIn] = useState(false);
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (!token || token == "undefined") {
+      setIsSignedIn(false);
+      router.push("/");
+    } else {
+      setIsSignedIn(true);
+    }
+  });
   return (
     <div>
       <Head>

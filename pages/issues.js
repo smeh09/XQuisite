@@ -1,8 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "../styles/issues.module.css";
+import { useRouter } from "next/router";
 
 export default function Issues() {
   const [id, setId] = useState("");
+  const router = useRouter();
+  const [isSignedIn, setIsSignedIn] = useState(false);
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (!token || token == "undefined") {
+      setIsSignedIn(false);
+      router.push("/");
+    } else {
+      setIsSignedIn(true);
+    }
+  });
   return (
     <div className={styles.main}>
       <div className={styles.row}>

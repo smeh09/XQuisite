@@ -7,8 +7,21 @@ import LineChart from "../components/Dashboard/LineChart";
 import DeviceCard from "../components/Dashboard/DeviceCard";
 import PayCard from "../components/Dashboard/PayCard";
 import PendingCard from "../components/Dashboard/PendingCard";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 export default function Dashboard() {
+  const router = useRouter();
+  const [isSignedIn, setIsSignedIn] = useState(false);
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (!token || token == "undefined") {
+      setIsSignedIn(false);
+      router.push("/");
+    } else {
+      setIsSignedIn(true);
+    }
+  });
   return (
     <div>
       <Head>

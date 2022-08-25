@@ -3,9 +3,22 @@
 import React from "react";
 import styles from "../styles/pay.module.css";
 import Head from "next/head";
-import Footer from "../components/Footer";
+import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
 
 export default function Pay() {
+  const [id, setId] = useState("");
+  const router = useRouter();
+  const [isSignedIn, setIsSignedIn] = useState(false);
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (!token || token == "undefined") {
+      setIsSignedIn(false);
+      router.push("/");
+    } else {
+      setIsSignedIn(true);
+    }
+  });
   return (
     <div>
       <Head>
