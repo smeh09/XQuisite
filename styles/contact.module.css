@@ -1,0 +1,91 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.heading {
+  font-size: 40px;
+  color: var(--primary);
+  text-align: center;
+  padding-top: 50px;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+.contactBox {
+  background-color: #0f0f0f;
+  border-radius: 10px;
+  width: 900px;
+  height: 620px;
+  border: 1px solid #323232;
+  border-radius: 10px;
+
+  display: flex;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 50px;
+  padding-top: 30px;
+  font-weight: bolder;
+  color: var(--primary);
+}
+.sub {
+  font-size: 15px;
+  font-weight: 300;
+  padding-left: 50px;
+  padding-top: 20px;
+  width: 80%;
+  color: var(--grey-7E);
+}
+.form {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.input {
+  background: #171717;
+
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 14px 15px;
+  width: 350px;
+  padding: 17px 20px;
+}
+.message {
+  background: #171717;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 14px 15px;
+  width: 500px;
+  height: 125px;
+  font-family: "Inter", sans-serif;
+
+  resize: none;
+}
+
+.submitButton {
+  width: 165px;
+  padding: 17px 25px;
+  background: var(--primary);
+  letter-spacing: 0.75px;
+
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.contactMobile {
+  display: none;
+}
