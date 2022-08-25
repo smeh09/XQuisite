@@ -43,9 +43,6 @@ export default function Pay() {
           </div>
         </div>
       </div>
-      <div className={styles.submitRow}>
-        <button id={styles.submit}>Pay and Zap</button>
-      </div>
       <Footer />
     </div>
   );

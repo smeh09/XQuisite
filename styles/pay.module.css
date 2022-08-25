@@ -3,6 +3,7 @@
   padding-left: 40px;
   font-size: 30px;
   font-weight: bold;
+  text-align: center;
 }
 .sub {
   color: var(--primary);
@@ -12,6 +13,7 @@
   padding-top: 5px;
   color: var(--grey-600);
   font-weight: 500;
+  text-align: center;
 }
 
 .sub2 {
@@ -19,6 +21,7 @@
   padding-top: 60px;
   color: var(--grey-600);
   font-weight: 300;
+  text-align: center;
 }
 .mainRow {
   padding-top: 90px;
@@ -36,23 +39,21 @@
   border-width: 1px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
 }
 
 .cardHead {
-  padding-top: 30px;
-  padding-left: 40px;
   font-size: 21px;
   font-weight: bold;
 }
 .cardHead1 {
-  padding-top: 30px;
-  padding-left: 5px;
   font-size: 21px;
   font-weight: bold;
 }
 .cardSub {
-  padding-top: 5px;
-  padding-left: 40px;
   font-size: 13px;
   font-weight: 500;
   color: var(--grey-200);

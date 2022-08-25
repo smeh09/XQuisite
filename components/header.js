@@ -83,12 +83,16 @@ export default function Header() {
         </div>
       </Link>
       <nav id={styles.nav1} className={styles.nav}>
-        <Link href="/">
+        <Link href="/dashboard">
           <div
             className={`${styles.navTxt} ${styles.hoverUnderlineAnimation}`}
-            id={router.pathname == "/" ? styles.selected : styles.nonSelected}
+            id={
+              router.pathname == "/dashboard"
+                ? styles.selected
+                : styles.nonSelected
+            }
           >
-            Home
+            Dashboard
           </div>
         </Link>
         <Link href="/contact">
@@ -113,6 +117,26 @@ export default function Header() {
             }
           >
             Products
+          </div>
+        </Link>
+        <Link href="/add">
+          <div
+            className={`${styles.navTxt} ${styles.hoverUnderlineAnimation}`}
+            id={
+              router.pathname == "/add" ? styles.selected : styles.nonSelected
+            }
+          >
+            Add
+          </div>
+        </Link>
+        <Link href="/pay">
+          <div
+            className={`${styles.navTxt} ${styles.hoverUnderlineAnimation}`}
+            id={
+              router.pathname == "/pay" ? styles.selected : styles.nonSelected
+            }
+          >
+            Pay
           </div>
         </Link>
       </nav>
