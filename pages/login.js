@@ -16,7 +16,7 @@ export default function Login() {
       password,
     };
     setLoading(true);
-    const res = await fetch("https://xquisite-backend.herokuapp.com/api/auth", {
+    const res = await fetch("http://localhost:5000/api/auth", {
       body: JSON.stringify(bodyData),
       method: "POST",
       headers: {
@@ -57,7 +57,7 @@ export default function Login() {
               className={styles.input}
             />
             <input
-              type="text"
+              type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Your password"

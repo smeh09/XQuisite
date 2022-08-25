@@ -2,10 +2,10 @@
 import React from "react";
 import styles from "../../styles/products.module.css";
 
-export default function ProductCard() {
+export default function ProductCard({ path }) {
   return (
     <div className={styles.productCard}>
-      <img src="/imgs/testImg.jpg" alt="img" className={styles.img}></img>
+      <img src={path} alt="img" className={styles.img}></img>
       <div className={styles.cardHead}>Lectricus 1.0</div>
       <div className={styles.cardSub}>Latest</div>
       <div className={styles.cardHead}>Delievered By</div>

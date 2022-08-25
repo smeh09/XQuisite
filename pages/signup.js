@@ -18,7 +18,7 @@ export default function SignUp() {
       password,
     };
     setLoading(true);
-    const res = await fetch("https://xquisite-backend.herokuapp.com/api/user", {
+    const res = await fetch("http://localhost:5000/api/user", {
       body: JSON.stringify(bodyData),
       method: "POST",
       headers: {

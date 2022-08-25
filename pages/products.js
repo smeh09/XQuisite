@@ -14,10 +14,10 @@ export default function products() {
         Check out, these <span className={styles.sub}>Products</span> !
       </div>
       <div className={styles.productRow}>
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        <ProductCard path="https://media.discordapp.net/attachments/950077830799183893/1012314019631222874/unknown.png" />
+        <ProductCard path="https://media.discordapp.net/attachments/950077830799183893/1012314051897999420/unknown.png" />
+        <ProductCard path="https://media.discordapp.net/attachments/950077830799183893/1012314097850789928/unknown.png" />
+        <ProductCard path="https://media.discordapp.net/attachments/950077830799183893/1012314137545682994/unknown.png" />
       </div>
       <div className={styles.lastText}>
         Contact us for{" "}
