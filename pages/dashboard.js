@@ -15,7 +15,7 @@ export default function Dashboard() {
         <title>Dashboard - Lectricus</title>
       </Head>
       <div className={styles.heading}>
-        Whalecome back, <span className={styles.sub}>User</span> !
+        Welcome back, <span className={styles.sub}>User</span> !
       </div>
       <div className={styles.titleRow}>
         <div className={styles.sub2}>THIS MONTH</div>
