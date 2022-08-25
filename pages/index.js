@@ -60,22 +60,16 @@ export default function Home() {
             Motive.
           </div>
           <div className={styles.motiveDesc}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu
-            elit eufelis blandit condimentum. Ut ac suscipit elit. Etiam
-            tincidunt ante ac sem blandit malesuada LoremLorem ipsum dolor sit
-            amet, consectetur adipiscing elit. Duis eu elit eufelis blandit
-            condimentum. Ut ac suscipit elit. Etiam tincidunt ante ac sem
-            blandit malesuada LoremLorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Duis eu elit eufelis blandit condimentum. Ut ac
-            suscipit elit. Etiam tincidunt ante ac sem blandit malesuada
-            LoremLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            eu elit eufelis blandit condimentum. Ut ac suscipit elit. Etiam
-            tincidunt ante ac sem blandit malesuada LoremLorem ipsum dolor sit
-            amet, consectetur adipiscing elit. Duis eu elit eufelis blandit
-            condimentum. Ut ac suscipit elit. Etiam tincidunt ante ac sem
-            blandit malesuada LoremLorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Duis eu elit eufelis blandit condimentum. Ut ac
-            suscipit elit. Etiam tincidunt ante ac sem blandit malesuada Lorem
+            Letricus aims at saving the environment from the constant carbon
+            emmisions and exponentially increasing energy wastage. With an easy
+            UI and extremely affordable prices, anyone can get our product and
+            save money on electricity bills and along with that save the
+            environment. We aim to install 12,000,000+ units in India alone and
+            save 100,000,000+ units of energy every month effectiviely
+            benefitting our consumers with ₹8,00,00,000 which would otherwise
+            have been wasted. With plans to go global in the next 5 years
+            Letricus will bring change to the world and you can play your part
+            right now, order online
           </div>
         </div>
         <div className={styles.videoSection}>
