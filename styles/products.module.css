@@ -46,6 +46,7 @@
   width: 200px;
   align-self: center;
   margin-bottom: 50px;
+  object-fit: cover;
 }
 .cardHead {
   font-size: 21px;

@@ -72,6 +72,7 @@
 .img {
   height: 350px;
   width: 250px;
+  object-fit: cover;
 }
 .cardHead {
   padding-top: 30px;
