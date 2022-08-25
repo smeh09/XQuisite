@@ -6,4 +6,4 @@ This website is made by DPS Noida. Our company name is Lectricus.
 <br>
 <br>
 The Hosted Website is at -> https://lectricus.vercel.app/
-The Hosted API is at -> 
+The Hosted API is at -> https://xquisite-backend.herokuapp.com/
