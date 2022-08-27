@@ -20,7 +20,7 @@ export default function DeviceCard({
         className={styles.img}
       ></img>
       <div className={styles.mainRow}>
-        <div className={styles.cardHead}>Lectricus 2.0</div>
+        <div className={styles.cardHead}>Lectricus.2</div>
         <div className={styles.cardSub}>Current Device</div>
         <div className={styles.cardHead}>{title2}</div>
         <div className={styles.cardSub}>{desc2}</div>

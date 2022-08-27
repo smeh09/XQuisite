@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../styles/cards.module.css";
-
+import Link from "next/link";
 export default function PayCard() {
   return (
     <div>
@@ -19,7 +19,9 @@ export default function PayCard() {
           </div>
         </div>
         <div className={styles.submitDiv1}>
-          <button id={styles.submit}>Pay Now</button>
+          <Link href="/pay">
+            <button id={styles.submit}>Pay Now</button>
+          </Link>
         </div>
       </div>
     </div>

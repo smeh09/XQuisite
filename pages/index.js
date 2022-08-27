@@ -36,7 +36,7 @@ export default function Home() {
               title={"See the bill"}
               iconPath={"/icons/signal.svg"}
               desc={
-                "Our inbuilt screen shows both a pie chart graph and a text format on the number of units used and the total monthly bill. The website further adds on a few details and gives personalized comments on how you can reduce your bill."
+                "Our inbuilt screen shows the units used and the total monthly bill. The website further adds on a few details and gives personalized comments on how you can reduce your bill."
               }
             />
             <FeatureCard
@@ -50,7 +50,7 @@ export default function Home() {
               title={"Monitor the data"}
               iconPath={"/icons/chart.svg"}
               desc={
-                "Our website provides graphical and text representation of previous months electricity use and gives a percentage reduce or increase to the current month."
+                "Our website provides graphical analytics and text representation of previous months electricity use and gives a percentage reduce or increase relative to the current month."
               }
             />
           </div>
